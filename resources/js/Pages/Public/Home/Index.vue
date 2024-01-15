@@ -1,20 +1,14 @@
 <script setup>
 import AppLayout from "@/Layouts/AppLayout.vue";
-import Header from "@/Pages/Public/Components/Header.vue";
 import Heading from "@/Pages/Public/Components/Heading.vue";
 import Filter from "@/Pages/Public/Home/Filter.vue";
 import Calendar from "@/Pages/Public/Home/Calendar/Calendar.vue";
-import Footer from "@/Pages/Public/Components/Footer.vue";
 </script>
 
 <template>
     <AppLayout>
-        <Header/>
-        <main class="content">
-            <Heading value="Calendar"/>
-            <Filter/>
-            <Calendar/>
-        </main>
-        <Footer/>
+        <Heading value="Calendar"/>
+        <Filter/>
+        <Calendar/>
     </AppLayout>
 </template>
