@@ -52,19 +52,20 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ],
-        "init": [
+        "setup": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "composer install",
             "@php artisan key:generate --ansi",
             "npm i && npm run build",
             "@php artisan storage:link"
         ],
-        "init-sail": [
+        "setup-sail": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "composer install",
             "@php artisan key:generate --ansi",
             "sail up -d",
-            "sail npm i && sail npm run build",
+            "sail npm i",
+            "sail npm run build",
             "sail artisan storage:link"
         ]
     },
