@@ -1,7 +1,7 @@
 <script setup>
 import Popper from "@/Pages/Public/Components/Popover/entry.esm.js";
 import Heading from "@/Pages/Public/Components/Heading.vue";
-import CalendarEventItem from "@/Pages/Public/Components/Calendar/CalendarEventItem.vue";
+import CalendarEventItem from "@/Pages/Public/Home/Calendar/CalendarEventItem.vue";
 import Button from "@/Pages/Public/Components/Button.vue";
 
 const props = defineProps({

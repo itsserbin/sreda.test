@@ -2,7 +2,7 @@
 import {defineAsyncComponent, onMounted, reactive} from "vue";
 import Heading from "@/Pages/Public/Components/Heading.vue";
 import EventsRepository from "@/Repositories/EventsRepository.js";
-import CalendarItem from "@/Pages/Public/Components/Calendar/CalendarItem.vue";
+import CalendarItem from "@/Pages/Public/Home/Calendar/CalendarItem.vue";
 
 const Modal = defineAsyncComponent(() =>
     import('@/Pages/Public/Home/Modal.vue')
@@ -43,7 +43,7 @@ const getCellClasses = (day, currentMonth) => {
         'has-event': events.length > 0,
     };
 
-    events.forEach((event, index) => {
+    events.forEach((event) => {
         classes[`event-type-${event.category.toLowerCase().replace(/\s/g, '-')}`] = true;
     });
 
