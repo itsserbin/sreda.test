@@ -1,0 +1,17 @@
+.popper {
+    background: #131315;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.40);
+    padding: 1.5rem;
+    transition: background 250ms ease-in-out;
+    z-index: 10;
+    width: 22.5rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.popper:hover,
+.popper:hover > #arrow::before {
+    background: #131315;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.40);
+}
+

@@ -1,0 +1,42 @@
+.footer {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+
+    &__logo {
+        text-align: center;
+        width: 100%;
+
+        .logo {
+            font-size: 2rem;
+        }
+    }
+
+    &__nav-links {
+        display: flex;
+        width: 22.5rem;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &__link {
+            color: $color-text;
+            font-family: Lexend, sans-serif;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 200;
+            line-height: 1rem;
+            text-decoration: none;
+        }
+    }
+
+    &__copyright {
+        color: $color-gray;
+        font-family: Lexend, sans-serif;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 200;
+        line-height: 0.875rem;
+    }
+}

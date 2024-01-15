@@ -1,0 +1,106 @@
+@import 'scss-reset/reset';
+@import 'variables';
+@import 'mixins';
+@import '@vuepic/vue-datepicker/dist/main.css';
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import "components/app";
+
+body {
+    font-family: 'Lexend', sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    background: $color-black;
+    padding: 24px 0;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 2.5rem 0;
+}
+
+.logo {
+    color: $color-red;
+    font-family: Lexend, sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+.hr {
+    background: rgba(255, 78, 107, 0.16);
+    height: 0.0625rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    background: $color-red;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.btn-link {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: $color-red;
+}
+
+.input {
+    display: flex;
+    padding: 0.625rem 0.75rem;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-self: stretch;
+    background: rgba(255, 250, 251, 0.04);
+    width: 100%;
+    border: 0;
+    color: $color-text;
+    font-family: Lexend, sans-serif;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 300;
+}
+
+.textarea {
+    display: flex;
+    min-height: 5rem;
+    padding: 0.625rem 0.75rem;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-self: stretch;
+    background: rgba(255, 250, 251, 0.04);
+    width: 100%;
+    border: 0;
+    color: $color-text;
+    font-family: Lexend, sans-serif;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 300;
+}
+
+.select {
+    display: flex;
+    padding: 0.625rem 0.75rem;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-self: stretch;
+    background: rgba(255, 250, 251, 0.04);
+    border: 0;
+    color: $color-text;
+    font-family: Lexend, sans-serif;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 300;
+}
